@@ -1,0 +1,53 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?28f5aec16648720c3859ff6270766ec4") format("truetype"),
+url("./flaticon.woff?28f5aec16648720c3859ff6270766ec4") format("woff"),
+url("./flaticon.woff2?28f5aec16648720c3859ff6270766ec4") format("woff2"),
+url("./flaticon.eot?28f5aec16648720c3859ff6270766ec4#iefix") format("embedded-opentype"),
+url("./flaticon.svg?28f5aec16648720c3859ff6270766ec4#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "blueprint": "\f101",
+    "bed": "\f102",
+    "lorry": "\f103",
+    "home": "\f104",
+    "capital": "\f105",
+    "real-estate": "\f106",
+    "bathtube": "\f107",
+);
+
+.flaticon-blueprint:before {
+    content: map-get($flaticon-map, "blueprint");
+}
+.flaticon-bed:before {
+    content: map-get($flaticon-map, "bed");
+}
+.flaticon-lorry:before {
+    content: map-get($flaticon-map, "lorry");
+}
+.flaticon-home:before {
+    content: map-get($flaticon-map, "home");
+}
+.flaticon-capital:before {
+    content: map-get($flaticon-map, "capital");
+}
+.flaticon-real-estate:before {
+    content: map-get($flaticon-map, "real-estate");
+}
+.flaticon-bathtube:before {
+    content: map-get($flaticon-map, "bathtube");
+}

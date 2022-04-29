@@ -1,0 +1,53 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?b2c5f81232103c596540304544420f93") format("truetype"),
+url("./flaticon.woff?b2c5f81232103c596540304544420f93") format("woff"),
+url("./flaticon.woff2?b2c5f81232103c596540304544420f93") format("woff2"),
+url("./flaticon.eot?b2c5f81232103c596540304544420f93#iefix") format("embedded-opentype"),
+url("./flaticon.svg?b2c5f81232103c596540304544420f93#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "bathtube": "\f101",
+    "real-estate": "\f102",
+    "capital": "\f103",
+    "home": "\f104",
+    "lorry": "\f105",
+    "bed": "\f106",
+    "blueprint": "\f107",
+);
+
+.flaticon-bathtube:before {
+    content: map-get($flaticon-map, "bathtube");
+}
+.flaticon-real-estate:before {
+    content: map-get($flaticon-map, "real-estate");
+}
+.flaticon-capital:before {
+    content: map-get($flaticon-map, "capital");
+}
+.flaticon-home:before {
+    content: map-get($flaticon-map, "home");
+}
+.flaticon-lorry:before {
+    content: map-get($flaticon-map, "lorry");
+}
+.flaticon-bed:before {
+    content: map-get($flaticon-map, "bed");
+}
+.flaticon-blueprint:before {
+    content: map-get($flaticon-map, "blueprint");
+}
